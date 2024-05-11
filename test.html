@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="testbox">
+        <form action="/">
+          <div class="banner">
+            <h1> Welcome </h1>
+          </div>
+          <br>
+          <div class="colums">
+            <div class="item">
+              <div class="tooltip">
+                <label for="name">Fullname<span class="star">*</span></label>
+                <span class="tooltiptext">Enter your Name</span>
+              </div>
+              <input id="name" type="text" name="name" required/> 
+            </div>
+          <div class="item">
+            <div class="tooltip">
+              Choose your color :
+                <span class="tooltiptext"> Choose color for Welcome message </span></div>
+                <select>
+                <option selected value="" disabled selected></option>
+                <option value="red" > Red </option>
+                <option value="blue"> Blue </option>
+                <option value="yellow"> Yellow </option>
+              </select>
+            </div>  
+            <div class="item">
+                <input type="submit" value="Submit">
+            </div>  
+        </div>
+        </form>
+      </div>
+</body>
+</html>

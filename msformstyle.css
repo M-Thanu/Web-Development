@@ -1,9 +1,13 @@
-html, body {
-    min-height: 90%;
-}
 body{
     background-color: #D4EFFB;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    height: 100%;
 }
+
 body, div, form, input, select, label { 
     padding: 0;
     margin: 0;
@@ -13,12 +17,14 @@ body, div, form, input, select, label {
     color: #666;
     line-height: 22px;
 }
+
 form {
-    width: 80%;
+    width: 50%;
     text-align : center;
-    margin: 50px 0px;
+    margin-right: 200;
     padding: 20px;
     border-radius: 6px;
     background: #FFFFC1;
     box-shadow: 0 0 8px  #669999; 
+    margin: 150px 0;
 }
