@@ -1,0 +1,24 @@
+html, body {
+    min-height: 90%;
+}
+body{
+    background-color: #D4EFFB;
+}
+body, div, form, input, select, label { 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+}
+form {
+    width: 80%;
+    text-align : center;
+    margin: 50px 0px;
+    padding: 20px;
+    border-radius: 6px;
+    background: #FFFFC1;
+    box-shadow: 0 0 8px  #669999; 
+}
