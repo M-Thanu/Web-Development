@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Message</title>
+    <style>
+        body{
+            background-color: #D4EFFB;
+            
+        }
+        div {
+            background-color: #fff4C7;
+            width: 300px;
+            border: 5px solid #02367B;
+            padding: 50px;
+            margin: 20px;
+        }
+        .center {
+            margin: auto;
+            width: 50%;
+            height: 100%;
+            padding: 10px;
+        }
+        h2{
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+<div class="center">
+    <h2> <center> Welcome </center></h2> <br>
+    <label for="name"> <b> Enter your Name: </b> </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="nameInput" placeholder="Enter your name" required> <br>
+    <br>
+    <b> Select your preffered colour :  </b>
+    <select id="colorSelect">
+    <option value="black">Black</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+    </select>
+    <br><br>
+    <button onclick="showWelcomeMessage()"> Submit </button>
+
+    <p id="welcomeMessage"></p>
+
+</div>
+
+<script>
+function showWelcomeMessage() {
+  var name = document.getElementById("nameInput").value;
+  var color = document.getElementById("colorSelect").value;
+  var message = document.getElementById("welcomeMessage");
+  
+  // Set the welcome message with the name
+  message.textContent = "Welcome, " + name + "!";
+  
+  // Change the text color of the welcome message
+  message.style.color = color;
+}
+</script>
+
+</body>
+</html>

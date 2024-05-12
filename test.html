@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="testbox">
-        <form>
+        <div class="frm">
           <div class="banner">
             <h1> Welcome </h1>
           </div>
@@ -33,12 +33,12 @@
               </select>
             </div>  
             <div class="item" id="center">
-               <input style="text-align: center;" type="submit" value="Submit" onclick="showWelcomeMessage()"> 
-                
+               <!--<input style="text-align: center;" type="submit" value="Submit" onclick="showWelcomeMessage()"> -->
+               <button onclick="showWelcomeMessage()"> Submit </button>
             </div>
             <p id="welcomemessage"></p>  
         </div>
-        </form>
+      </div>
       </div>
       <script>
         function showWelcomeMessage() {
