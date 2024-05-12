@@ -1,5 +1,5 @@
 html, body {
-    min-height: 90%;
+    min-height: 95%;
 }
 body{
     background-color: #D4EFFB;
@@ -23,10 +23,7 @@ h1 {
     line-height: 83px;
 }
 
-textarea {
-    width: calc(100% - 12px);
-    padding: 5px;
-}
+
 .testbox {
     display: flex;
     justify-content: center;
@@ -37,7 +34,7 @@ textarea {
 }
 form {
     width: 100%;
-    padding: 20px;
+    padding: 40px;
     border-radius: 6px;
     background: #fff;
     box-shadow: 0 0 8px  #669999; 
@@ -249,16 +246,6 @@ textarea {
       .tooltip:hover .tooltiptext {
         visibility: visible;
       }
-      /*
-      #acc{
-        margin: 1rem;
-        padding: 2rem 2rem;
-      }
-      #pwd,#eye {
-        display: inline-block;
-        padding: 1rem 1rem;
-        vertical-align: middle;
-      }*/
      
     
       button{
@@ -266,8 +253,14 @@ textarea {
         /*padding: 10px;*/
         border: none;
         border-radius: 5px; 
-        /*background:  #669999;
-        font-size: 16px;
-        color: #fff;*/
         cursor: pointer;
+      }
+
+      #center{
+            margin: 0;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
       }

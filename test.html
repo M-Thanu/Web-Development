@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="testbox">
-        <form action="/">
+        <form>
           <div class="banner">
             <h1> Welcome </h1>
           </div>
@@ -19,24 +19,38 @@
                 <label for="name">Fullname<span class="star">*</span></label>
                 <span class="tooltiptext">Enter your Name</span>
               </div>
-              <input id="name" type="text" name="name" required/> 
+              <input id="name" type="text" name="name" id="nameIn" required > 
             </div>
           <div class="item">
             <div class="tooltip">
               Choose your color :
                 <span class="tooltiptext"> Choose color for Welcome message </span></div>
-                <select>
+                <select id="clrslt">
                 <option selected value="" disabled selected></option>
                 <option value="red" > Red </option>
                 <option value="blue"> Blue </option>
                 <option value="yellow"> Yellow </option>
               </select>
             </div>  
-            <div class="item">
-                <input type="submit" value="Submit">
-            </div>  
+            <div class="item" id="center">
+               <input style="text-align: center;" type="submit" value="Submit" onclick="showWelcomeMessage()"> 
+                
+            </div>
+            <p id="welcomemessage"></p>  
         </div>
         </form>
       </div>
+      <script>
+        function showWelcomeMessage() {
+          var name = document.getElementById("nameIn").value;
+          var color = document.getElementById("clrslt").value;
+          var message = document.getElementById("welcomemessage");
+          
+         
+          message.textContent = "Welcome, " + name + "!";
+        
+          message.style.color = color;
+        }
+      </script>
 </body>
 </html>
