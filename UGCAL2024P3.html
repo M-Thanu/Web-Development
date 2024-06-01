@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full fledged form</title>
+</head>
+<body>
+        <form action=" " method="get">
+            <fieldset>
+                <legend> UGC A/L ICT : </legend>
+                Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  type="text" name="firstname" id="fname" placeholder="Your name" size="15"> <br><br>
+                School Name : &nbsp; <input type="text" name="scname" id="scname" value="Uduvil Girls' College"> <br><br>
+                Date of Birth : &nbsp;  <input type="date" name="dob" id="dob"> <br> <br>
+                Password :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="password" name="pwd" id="pwd"> <br> <br>
+                
+
+                <!--Radio Button-->
+                Gender : &nbsp;&nbsp;&nbsp;&nbsp; 
+
+                Male:   <input type="radio" name="gen" value="male" id="male" checked>
+                Female: <input type="radio" name="gen" value="female" id="female"> 
+                Other   <input type="radio" name="gen" value="other" id="other"> <br> <br>
+
+                <!--CheckBox-->
+
+                Languages You know : 
+
+                Tamil : <input type="checkbox" name="tam" id="tam" value="tam" checked>
+                English : <input type="checkbox" name="eng" id="eng" value="eng">
+                Sinhala : <input type="checkbox" name="sin" id="sin" value="sin">
+                French : <input type="checkbox" name="fren" id="fren" value="fren"> <br><br>
+
+                <!--Text Area-->
+                <textarea name="comments" id="comments" cols="45" rows="15">
+                    Write your Comments ...
+                </textarea> <br><br>
+
+                <!--DropDownList-->
+                List of cars : &nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="cars" id="cars" multiple>
+                    <option value="audi"> Audi </option>
+                    <option value="BMW"> BMW </option>
+                    <option value="tesla"> Tesla </option>
+                </select> <br><br>
+
+                Upload your CV : 
+                <input type="file" name="mycv" id="mycv"> <br><br>
+
+                <input type="submit" name="sbt" id="sbt"> &nbsp; &nbsp;
+                <input type="reset" name="rst" id="rst"> <br>
+
+                
+            </fieldset> 
+            
+        </form>
+        Fore more information 
+        <a href="https://www.youtube.com/" target="_blank"> <!--Opens in new tab-->
+            Click me
+        </a> <br>
+        <a href="https://www.facebook.com/" target="_parent"> <!--Opens in same tab-->
+            Same 
+        </a>
+</body>
+</html>
